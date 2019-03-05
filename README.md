@@ -10,9 +10,9 @@ python transparent_png.py [OPTION] [X] [Y]
 
 ### Options
 
-| Option | description                                                         |
-|--------|---------------------------------------------------------------------|
-| -o     | Optimizes the created image using ImageOptim if available or PNGOUT |
+| Option | description                                                           |
+|--------|-----------------------------------------------------------------------|
+| -o     | Optimizes the created image using ImageOptim, if available, or PNGOUT |
 
 ### Examples
 
@@ -26,7 +26,7 @@ Creates an image with a width of 42 and a height of 1337, and saves it to the cu
 python transparent_png.py -o 100 50
 ```
 
-Creates an image of size 100x50, optimizes it using ImageOptim (if available on macOS) or PNGOUT (*nix or Windows) and saves the image to the current directory
+Creates an image of size 100x50, optimizes it using ImageOptim (if available on macOS) or PNGOUT (*nix or Windows) and saves the image to the current directory.
 
 ## Running through Docker
 
