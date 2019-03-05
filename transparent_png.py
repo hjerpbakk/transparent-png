@@ -12,7 +12,7 @@ def createTransparentImage():
     
     blank_image = Image.new('RGBA', (int(sys.argv[1]), int(sys.argv[2])), (255,255,255,0))
     ImageDraw.Draw(blank_image)
-    imagePath = path.abspath(sys.argv[1] + "x" + sys.argv[2] + ".png")
+    imagePath = sys.argv[1] + "x" + sys.argv[2] + ".png"
     blank_image.save(imagePath)
     print("Created " + imagePath)
 
