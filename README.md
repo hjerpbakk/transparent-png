@@ -26,13 +26,15 @@ Creates an image with a width of 42 and a height of 1337, and saves it to the cu
 python transparent_png.py -o 100 50
 ```
 
-Creates an image of size 100x50, optimizes it using ImageOptim (if available on macOS) or PNGOUT (*nix or Windows) and saves the image to the current directory.
+Creates an image of size 100x50, optimizes it using [ImageOptim](https://imageoptim.com/mac) (if available on macOS) or [PNGOUT](http://www.jonof.id.au/kenutils) (*nix or Windows) and saves the image to the current directory.
 
 ## Running through Docker
 
 Instead of having Python installed on your machine, make Docker do the heavy lifting for you.
 
 ### Example running with the image from Docker Hub
+
+A Docker image is [available on Docker Hub](https://hub.docker.com/r/hjerpbakk/transparent-png).
 
 ```bash
 docker run -v $(pwd):/app/image hjerpbakk/transparent-png 42 1337
