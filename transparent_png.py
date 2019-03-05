@@ -2,10 +2,11 @@
 import sys
 from os import path
 from PIL import Image, ImageDraw
+import subprocess
 
 def createTransparentImage():
     """Creates a transparent image of the size given by two command line arguments."""
-    if (len(sys.argv) != 3):
+    if (len(sys.argv) < 3):
         print("X and Y must be specified as arguments. Example: python transparent_png 100 70")
         return 1
     
@@ -14,6 +15,10 @@ def createTransparentImage():
     imagePath = path.abspath(sys.argv[1] + "x" + sys.argv[2] + ".png")
     blank_image.save(imagePath)
     print("Created " + imagePath)
+
+    if (len(sys.argv) == 4):
+        print("Minifiying image...")
+        subprocess.call(["open", "-a", "ImageOptim", imagePath])
     return 0
 
 createTransparentImage()
