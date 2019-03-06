@@ -10,9 +10,9 @@ python transparent_png.py [OPTION] [X] [Y]
 
 ### Options
 
-| Option | description                                                           |
-|--------|-----------------------------------------------------------------------|
-| -o     | Optimizes the created image using ImageOptim, if available, or PNGOUT |
+| Option | Description                                                            |
+|--------|------------------------------------------------------------------------|
+| -o     | Optimizes the created image using ImageOptim, if available, or PNGOUT. |
 
 ### Examples
 
