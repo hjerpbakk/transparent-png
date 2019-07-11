@@ -1,5 +1,7 @@
 # Transparent PNG
 
+[![Pulls from DockerHub](https://img.shields.io/docker/pulls/hjerpbakk/transparent-png.svg)](https://hub.docker.com/r/hjerpbakk/transparent-png)
+
 `transparent_png` is a simple Python script for creating a transparent PNG of a given size.
 
 ## Usage
